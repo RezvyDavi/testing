@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek User Agent</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 2em;
+        }
+
+        h1 {
+            font-size: 1.2em;
+            color: #0056b3;
+            word-break: break-all;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>User Agent Browser Anda Saat Ini Adalah:</p>
+
+    <h1 id="userAgentDisplay"></h1>
+
+
+    <script>
+        // 1. Dapatkan elemen H1 berdasarkan ID-nya.
+        var displayElement = document.getElementById('userAgentDisplay');
+
+        // 2. Dapatkan string User-Agent dari browser.
+        var currentUserAgent = navigator.userAgent;
+
+        // 3. Tuliskan string User-Agent tersebut ke dalam elemen H1.
+        displayElement.textContent = currentUserAgent;
+    </script>
+
+</body>
+
+</html>
